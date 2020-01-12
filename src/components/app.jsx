@@ -1,9 +1,16 @@
 import React from 'react';
+import CityList from './city_list';
+import cities from '../../data/cities';
 
 const App = () => {
   return (
     <div className="app">
-      <p>React + Redux starter</p>
+      <div className="cities">
+        <CityList cities={cities} />
+      </div>
+      <div className="active-city">
+
+      </div>
     </div>
   );
 };
