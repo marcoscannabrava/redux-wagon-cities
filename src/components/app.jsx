@@ -1,16 +1,12 @@
 import React from 'react';
 import CityList from './city_list';
-import cities from '../../data/cities';
+import ActiveCity from './active_city';
 
 const App = () => {
   return (
     <div className="app">
-      <div className="cities">
-        <CityList cities={cities} />
-      </div>
-      <div className="active-city">
-
-      </div>
+      <CityList />
+      <ActiveCity />
     </div>
   );
 };

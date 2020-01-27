@@ -1,9 +1,8 @@
-import cities from '../../data/cities';
 
-export default function setcities() {
+export default function setActiveCity(city) {
   // TODO: Api call! For now, simulate a DB
   return {
-    type: 'SET_CITIES',
-    payload: cities
+    type: 'SET_ACTIVE_CITY',
+    payload: city
   };
 }

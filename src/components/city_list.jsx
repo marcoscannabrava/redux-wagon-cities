@@ -1,19 +1,26 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import City from './city';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class CityList extends Component {
   renderList = () => {
-    return this.props.cities.map(city => <City id={city.slug} key={city.slug} {...city} />);
+    return this.props.cities.map(city => <City id={city.slug} key={city.slug} city={city} />);
   }
 
   render() {
     return (
-      <div className="city-list">
+      <div className="cities">
         {this.renderList()}
       </div>
     );
   }
 }
 
-export default CityList;
+function mapStateToProps(state) {
+  return {
+    cities: state.cities
+  };
+}
+export default connect(mapStateToProps)(CityList);
+

@@ -1,11 +1,7 @@
-# redux-boilerplate
+## React Redux App that shows Le Wagon's Bootcamp Cities
 
-Simple React + Redux starter with the following config:
+![](https://raw.githubusercontent.com/lewagon/react-redux-images/master/redux/wagon_cities.png)
 
-- React, ReactDOM
-- Redux, React-Redux
-- Webpack 3
-- Babel with es2015 and react presets
-- Bootstrap (css only, loaded from a cdn in `index.html`)
-- work with `.js` or `.jsx` files
-- main `application.scss` stylesheet is imported in `index.js` as a module to enjoy hot reloading
+### Setup
+- If you want to try to copy this project from scratch, start from the [Redux boilerplate](https://github.com/lewagon/redux-boilerplate).
+- Run 'yarn start' to start server on http://localhost:8080/ and run the app.
